@@ -1,13 +1,7 @@
 <footer class="footer">
     <div>
-    {% if meta.email %}
-        <p><a href="mailto:{{ meta.email }}">{{ meta.email }}</a></p>
-    {% endif %}
-    {% if meta.telephone %}
-        <p><a href="tel:{{ meta.telephone }}">{{ meta.telephone }}</a></p>
-    {% endif %}
-    </div>
+    kannboの軽いこうしき
     <div>
-        <p>Last Update: {{ build.timestamp | dateToFormat("dd LLLL yyyy, t") }}</p>
+        <p>最終更新: {{ build.timestamp | dateToFormat("dd LLLL yyyy, t") }}</p>
     </div>
 </footer>
